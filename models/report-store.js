@@ -5,7 +5,13 @@ const db = initStore("reports");
 
 export const reportStore = {
     async getAllReportsByStation(stationId) {
-        return db.data.reports.filter((report) => report.station_id === stationId);
+        await db.read();
+        if (!db.data.reports === null) {
+            return db.data.reports.filter((report) => report.station_id === stationId);
+        } else {
+            console.log("no reports entered yet")
+        }
+        
     },
 
     async addReport(stationId, report) {
