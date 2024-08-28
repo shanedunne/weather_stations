@@ -17,5 +17,14 @@ export const stationController = {
         console.log(`adding new station: ${newStation.title}`);
         await stationStore.addStation(newStation);
         response.redirect("/dashboard");
-    }
-}
+    },
+
+    async getStation(request, response) {
+        const station = await stationStore.getStationById(request.params.id);
+        const viewData = {
+            title: "Station",
+            station: station,
+        };
+        response.render("station-view", viewData);
+    },
+};
