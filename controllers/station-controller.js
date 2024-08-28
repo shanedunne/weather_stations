@@ -6,6 +6,6 @@ export const stationController = {
             title : "Station Dashboard",
         }
         console.log("station dashboard rendering");
-        response.render("station-dashboard-view", viewData);
+        response.render("dashboard-view", viewData);
     }
 }
