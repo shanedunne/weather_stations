@@ -18,6 +18,15 @@
       "pressure": "12",
       "_id": "cc5b2e55-3a5d-4f2a-a345-d13525496df3",
       "station_id": "1a5c6db8-d451-45cb-9219-841be267d242"
+    },
+    {
+      "code": "320",
+      "temp": "20",
+      "wind_speed": "12",
+      "wind_direction": "Northeast",
+      "pressure": "5",
+      "_id": "60ba99d0-7240-4322-909d-3e052affa0e6",
+      "station_id": "1a5c6db8-d451-45cb-9219-841be267d242"
     }
   ]
 }
