@@ -3,30 +3,22 @@
   "reports": [
     {
       "code": "100",
-      "temp": "23",
-      "wind_speed": "14",
-      "wind_direction": "West",
-      "pressure": "30",
-      "_id": "37414ca2-8774-4772-a645-be70f54e27b2",
-      "station_id": "1a5c6db8-d451-45cb-9219-841be267d242"
+      "temp": "200",
+      "wind_speed": "333",
+      "wind_direction": "North",
+      "pressure": "44",
+      "_id": "2b02a534-459f-4ce7-902c-6f952062753f",
+      "station_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
     },
     {
-      "code": "300",
-      "temp": "16",
-      "wind_speed": "32",
-      "wind_direction": "SouthWest",
-      "pressure": "12",
-      "_id": "cc5b2e55-3a5d-4f2a-a345-d13525496df3",
-      "station_id": "1a5c6db8-d451-45cb-9219-841be267d242"
-    },
-    {
-      "code": "320",
-      "temp": "20",
-      "wind_speed": "12",
-      "wind_direction": "Northeast",
-      "pressure": "5",
-      "_id": "60ba99d0-7240-4322-909d-3e052affa0e6",
-      "station_id": "1a5c6db8-d451-45cb-9219-841be267d242"
+      "code": "922153",
+      "temp": "f",
+      "wind_speed": "534",
+      "wind_direction": "Northwest",
+      "pressure": "dd",
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "_id": "95f6222c-ccd6-4729-8128-341970b3b848",
+      "station_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
     }
   ]
 }

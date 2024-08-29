@@ -3,15 +3,8 @@
   "stations": [
     {
       "title": "Dublin",
-      "_id": "1a5c6db8-d451-45cb-9219-841be267d242"
-    },
-    {
-      "title": "Galway",
-      "_id": "ed4d9c09-afdd-45d7-a1db-796acaa9c612"
-    },
-    {
-      "title": "Cork",
-      "_id": "286227b0-491a-4743-b279-9cf580274182"
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
     }
   ]
 }

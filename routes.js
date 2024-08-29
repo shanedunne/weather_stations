@@ -1,6 +1,6 @@
 import express from "express";
 
-import { stationDashboardController } from "./controllers/station-dashboard-controller.js";
+import { dashboardController } from "./controllers/dashboard-controller.js";
 import { stationController } from "./controllers/station-controller.js";
 import { accountsController } from "./controllers/accounts-controller.js";
 // import { reportController } from "./controllers/report-controller.js";
@@ -15,7 +15,7 @@ router.get("/logout", accountsController.logout);
 router.post("/register", accountsController.register);
 router.post("/authenticate", accountsController.authenticate);
 
-router.get("/dashboard", stationDashboardController.index);
-router.post("/dashboard/addstation", stationDashboardController.addStation);
+router.get("/dashboard", dashboardController.index);
+router.post("/dashboard/addstation", dashboardController.addStation);
 router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreport", stationController.addReport);
