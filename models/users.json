@@ -1,0 +1,12 @@
+{
+  "file": "./models/users.json",
+  "users": [
+    {
+      "firstName": "Shane",
+      "lastName": "Dunne",
+      "email": "shanejjdunne@hotmail.com",
+      "password": "q#*e3p42*M5*7cm",
+      "_id": "6dda7be9-10b8-4faa-918a-0066eb80103d"
+    }
+  ]
+}
