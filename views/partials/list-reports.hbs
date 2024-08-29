@@ -9,22 +9,22 @@
     </tr>
   </thead>
   <tbody>
-    {{#each station.reports}}
+    {{#each reports}}
     <tr>
       <td>
-        {{code}}
+        {{this.code}}
       </td>
       <td>
-        {{temp}}
+        {{this.temp}}
       </td>
       <td>
-        {{wind_speed}}
+        {{this.wind_speed}}
       </td>
       <td>
-        {{wind_direction}}
+        {{this.wind_direction}}
       </td>
       <td>
-        {{pressure}}
+        {{this.pressure}}
       </td>
     </tr>
     {{/each}}
