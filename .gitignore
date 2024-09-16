@@ -54,3 +54,8 @@ package-lock.json
 
 # Notes
 notes.md
+
+# Date
+reports.json
+users.json
+stations.json
