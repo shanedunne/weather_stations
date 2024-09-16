@@ -1,0 +1,24 @@
+<table class="table is-fullwidth">
+  <thead>
+    <tr>
+      <th>Code</th>
+      <th>Category</th>
+      <th>Description</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each weather_codes}}
+    <tr>
+      <td>
+        {{this.weather_code}}
+      </td>
+      <td>
+        {{this.weather_category}}
+      </td>
+      <td>
+        {{this.weather_description}}
+      </td>
+    </tr>
+    {{/each}}
+  </tbody>
+</table>

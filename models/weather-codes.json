@@ -1,0 +1,335 @@
+{
+    "weather_codes": [
+      {
+        "weather_code": 200,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm with light rain",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 201,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm with rain",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 202,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm with heavy rain",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 210,
+        "weather_category": "Thunderstorm",
+        "weather_description": "light thunderstorm",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 211,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 212,
+        "weather_category": "Thunderstorm",
+        "weather_description": "heavy thunderstorm",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 221,
+        "weather_category": "Thunderstorm",
+        "weather_description": "ragged thunderstorm",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 230,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm with light drizzle",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 231,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm with drizzle",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 232,
+        "weather_category": "Thunderstorm",
+        "weather_description": "thunderstorm with heavy drizzle",
+        "icon_code": "11d"
+      },
+      {
+        "weather_code": 300,
+        "weather_category": "Drizzle",
+        "weather_description": "light intensity drizzle",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 301,
+        "weather_category": "Drizzle",
+        "weather_description": "drizzle",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 302,
+        "weather_category": "Drizzle",
+        "weather_description": "heavy intensity drizzle",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 310,
+        "weather_category": "Drizzle",
+        "weather_description": "light intensity drizzle rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 311,
+        "weather_category": "Drizzle",
+        "weather_description": "drizzle rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 312,
+        "weather_category": "Drizzle",
+        "weather_description": "heavy intensity drizzle rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 313,
+        "weather_category": "Drizzle",
+        "weather_description": "shower rain and drizzle",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 314,
+        "weather_category": "Drizzle",
+        "weather_description": "heavy shower rain and drizzle",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 321,
+        "weather_category": "Drizzle",
+        "weather_description": "shower drizzle",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 500,
+        "weather_category": "Rain",
+        "weather_description": "light rain",
+        "icon_code": "10d"
+      },
+      {
+        "weather_code": 501,
+        "weather_category": "Rain",
+        "weather_description": "moderate rain",
+        "icon_code": "10d"
+      },
+      {
+        "weather_code": 502,
+        "weather_category": "Rain",
+        "weather_description": "heavy intensity rain",
+        "icon_code": "10d"
+      },
+      {
+        "weather_code": 503,
+        "weather_category": "Rain",
+        "weather_description": "very heavy rain",
+        "icon_code": "10d"
+      },
+      {
+        "weather_code": 504,
+        "weather_category": "Rain",
+        "weather_description": "extreme rain",
+        "icon_code": "10d"
+      },
+      {
+        "weather_code": 511,
+        "weather_category": "Rain",
+        "weather_description": "freezing rain",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 520,
+        "weather_category": "Rain",
+        "weather_description": "light intensity shower rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 521,
+        "weather_category": "Rain",
+        "weather_description": "shower rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 522,
+        "weather_category": "Rain",
+        "weather_description": "heavy intensity shower rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 531,
+        "weather_category": "Rain",
+        "weather_description": "ragged shower rain",
+        "icon_code": "09d"
+      },
+      {
+        "weather_code": 600,
+        "weather_category": "Snow",
+        "weather_description": "light snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 601,
+        "weather_category": "Snow",
+        "weather_description": "snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 602,
+        "weather_category": "Snow",
+        "weather_description": "heavy snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 611,
+        "weather_category": "Snow",
+        "weather_description": "sleet",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 612,
+        "weather_category": "Snow",
+        "weather_description": "light shower sleet",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 613,
+        "weather_category": "Snow",
+        "weather_description": "shower sleet",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 615,
+        "weather_category": "Snow",
+        "weather_description": "light rain and snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 616,
+        "weather_category": "Snow",
+        "weather_description": "rain and snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 620,
+        "weather_category": "Snow",
+        "weather_description": "light shower snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 621,
+        "weather_category": "Snow",
+        "weather_description": "shower snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 622,
+        "weather_category": "Snow",
+        "weather_description": "heavy shower snow",
+        "icon_code": "13d"
+      },
+      {
+        "weather_code": 701,
+        "weather_category": "Atmosphere",
+        "weather_description": "mist",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 711,
+        "weather_category": "Atmosphere",
+        "weather_description": "smoke",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 721,
+        "weather_category": "Atmosphere",
+        "weather_description": "haze",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 731,
+        "weather_category": "Atmosphere",
+        "weather_description": "sand/dust whirls",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 741,
+        "weather_category": "Atmosphere",
+        "weather_description": "fog",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 751,
+        "weather_category": "Atmosphere",
+        "weather_description": "sand",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 761,
+        "weather_category": "Atmosphere",
+        "weather_description": "dust",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 762,
+        "weather_category": "Atmosphere",
+        "weather_description": "volcanic ash",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 771,
+        "weather_category": "Atmosphere",
+        "weather_description": "squalls",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 781,
+        "weather_category": "Atmosphere",
+        "weather_description": "tornado",
+        "icon_code": "50d"
+      },
+      {
+        "weather_code": 800,
+        "weather_category": "Clear",
+        "weather_description": "clear sky",
+        "icon_code": "01d"
+      },
+      {
+        "weather_code": 801,
+        "weather_category": "Clouds",
+        "weather_description": "few clouds: 11-25%",
+        "icon_code": "02d"
+      },
+      {
+        "weather_code": 802,
+        "weather_category": "Clouds",
+        "weather_description": "scattered clouds: 25-50%",
+        "icon_code": "03d"
+      },
+      {
+        "weather_code": 803,
+        "weather_category": "Clouds",
+        "weather_description": "broken clouds: 51-84%",
+        "icon_code": "04d"
+      },
+      {
+        "weather_code": 804,
+        "weather_category": "Clouds",
+        "weather_description": "overcast clouds: 85-100%",
+        "icon_code": "04d"
+      }
+    ]
+  }
+  

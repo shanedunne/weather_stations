@@ -17,5 +17,6 @@ router.post("/authenticate", accountsController.authenticate);
 
 router.get("/dashboard", dashboardController.index);
 router.post("/dashboard/addstation", dashboardController.addStation);
+router.get("/station/getWeatherCodes", stationController.getWeatherCodes);
 router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreport", stationController.addReport);

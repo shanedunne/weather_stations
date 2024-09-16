@@ -1,5 +1,6 @@
 import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
+import { weatherCodeStore } from "../models/weather-code-store.js";
 import { accountsController } from "./accounts-controller.js";
 
 
@@ -33,5 +34,14 @@ export const stationController = {
         console.log("Adding new report");
         await reportStore.addReport(station._id, newReport);
         response.redirect("/station/" + station._id);
+    },
+
+    async getWeatherCodes(request, response) {
+        const weather_codes = await weatherCodeStore.getAllWeatherCodes();         
+        const viewData = {
+            weather_codes: weather_codes,
+        };
+        response.render("weather-codes-view", viewData);
     }
+    
 };
