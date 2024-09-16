@@ -9,12 +9,15 @@ export const stationController = {
     async index(request, response) {
         const station = await stationStore.getStationById(request.params.id);
         const reports = await reportStore.getAllReportsByStation(request.params.id);
+        const stationSummary = await reportStore.getStationSummary(request.params.id);  // Get weather summary
+
 
     
         const viewData = {
             title: "Station",
             station: station,
             reports: reports,
+            stationSummary: stationSummary,
         };
         response.render("station-view", viewData);
     },
@@ -30,6 +33,7 @@ export const stationController = {
             wind_direction: request.body.wind_direction,
             pressure: request.body.pressure,
             userid: loggedInUser._id,
+            timestamp: new Date(),
         };
         console.log("Adding new report");
         await reportStore.addReport(station._id, newReport);
@@ -42,6 +46,6 @@ export const stationController = {
             weather_codes: weather_codes,
         };
         response.render("weather-codes-view", viewData);
-    }
+    },
     
 };
