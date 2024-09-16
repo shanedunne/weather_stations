@@ -3,7 +3,7 @@
     
     <!-- Location -->
     <div class="column">
-      <div class="card has-background-black has-text-white">
+      <div class="card has-background-black has-text-white" style="height: 100%;">
         <div class="card-content">
           <p class="title has-text-white">{{station.title}}</p>
           <p class="subtitle has-text-white">Lat: {{station.latitude}}<br>Lng: {{station.longitude}}</p>
@@ -13,19 +13,22 @@
 
     <!-- Weather -->
     <div class="column">
-      <div class="card has-background-black has-text-white">
+      <div class="card has-background-black has-text-white" style="height: 100%;">
         <div class="card-content">
           <p class="title has-text-white">Weather</p>
-          <p class="subtitle has-text-white">{{stationSummary.code}}</p>
+          <img src="https://openweathermap.org/img/wn/{{weatherInfo.icon_code}}@2x.png" alt="Weather Icon" width="50" height="50">
+
+          <p class="subtitle has-text-white">{{weatherInfo.weatherDescription}}</p>
         </div>
       </div>
     </div>
 
     <!-- Temp -->
     <div class="column">
-      <div class="card has-background-black has-text-white">
+      <div class="card has-background-black has-text-white" style="height: 100%;">
         <div class="card-content">
           <p class="title has-text-white">Temp</p>
+          {{>icons/temperature}}
           <p class="subtitle has-text-white">{{stationSummary.temp}}°C <br> Max: {{stationSummary.maxTemp}}°C <br> Min: {{stationSummary.minTemp}}°C </p>
         </div>
       </div>
@@ -33,9 +36,10 @@
 
     <!-- Wind -->
     <div class="column">
-      <div class="card has-background-black has-text-white">
+      <div class="card has-background-black has-text-white" style="height: 100%;">
         <div class="card-content">
           <p class="title has-text-white">Wind</p>
+          {{>icons/wind}}
           <p class="subtitle has-text-white">
             {{stationSummary.wind_speed}} KPH <br> {{stationSummary.wind_direction}}  <br> Max: {{stationSummary.maxWindSpeed}} KPH <br> Min: {{stationSummary.minWindSpeed}} KPH
           </p>
@@ -45,9 +49,10 @@
 
     <!-- Pressure -->
     <div class="column">
-      <div class="card has-background-black has-text-white">
+      <div class="card has-background-black has-text-white" style="height: 100%;">
         <div class="card-content">
           <p class="title has-text-white">Pressure</p>
+          {{>icons/pressure}}
           <p class="subtitle has-text-white">{{stationSummary.pressure}} hPa <br> Max: {{stationSummary.maxPressure}} hPa <br> Min: {{stationSummary.minPressure}} hPa</p>
         </div>
       </div>
