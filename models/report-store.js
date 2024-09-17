@@ -72,7 +72,14 @@ export const reportStore = {
 
     return {temp, wind_speed, wind_direction, pressure, code, maxTemp, minTemp, maxWindSpeed, minWindSpeed, maxPressure, minPressure};
 
-  }
+  },
+
+  async deleteReport(id) {
+    await db.read();
+    const index = db.data.reports.findIndex((report) => report._id === id);
+    db.data.reports.splice(index, 1);
+    await db.write();
+  },
 
 
 

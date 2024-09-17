@@ -161,6 +161,17 @@
       "timestamp": "2024-09-16T20:03:59.284Z",
       "_id": "64cd2712-18c2-4b5c-8bde-116fb716bbff",
       "station_id": "99b39a59-7325-4989-806d-8f16e44b01ee"
+    },
+    {
+      "code": "987",
+      "temp": "53",
+      "wind_speed": "53",
+      "wind_direction": "North",
+      "pressure": "5",
+      "userid": "aa6aa524-5aab-45f5-a5fd-363b8b370282",
+      "timestamp": "2024-09-17T13:48:05.433Z",
+      "_id": "8fe5e2a8-7c3b-4c2a-82fe-c1c413381f98",
+      "station_id": "6824d99d-b419-4971-b9e5-122ae74b9098"
     }
   ]
 }

@@ -36,6 +36,20 @@
       "longitude": "43.434",
       "latitude": "24.3445",
       "_id": "99b39a59-7325-4989-806d-8f16e44b01ee"
+    },
+    {
+      "title": "Test Town",
+      "userid": "aa6aa524-5aab-45f5-a5fd-363b8b370282",
+      "longitude": "45.64534",
+      "latitude": "13.343",
+      "_id": "5b6766bd-9d67-41fb-a29b-95fa189e793a"
+    },
+    {
+      "title": "Test City",
+      "userid": "aa6aa524-5aab-45f5-a5fd-363b8b370282",
+      "longitude": "5",
+      "latitude": "2",
+      "_id": "6824d99d-b419-4971-b9e5-122ae74b9098"
     }
   ]
 }

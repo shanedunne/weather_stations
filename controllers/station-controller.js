@@ -42,11 +42,19 @@ export const stationController = {
             wind_direction: request.body.wind_direction,
             pressure: request.body.pressure,
             userid: loggedInUser._id,
-            timestamp: new Date(),
+            timestamp: new Date().toISOString(),
         };
         console.log("Adding new report");
         await reportStore.addReport(station._id, newReport);
         response.redirect("/station/" + station._id);
+    },
+
+    async deleteReport(request, response) {
+        const stationId = request.params.stationid;
+        const reportId = request.params.reportid;
+        console.log(`Deleting report ${reportId} from station ${stationId}`);
+        await reportStore.deleteReport(reportId);
+        response.redirect("/station/" + stationId);
     },
 
     async getWeatherCodes(request, response) {
