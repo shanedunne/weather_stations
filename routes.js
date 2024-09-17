@@ -18,7 +18,12 @@ router.post("/authenticate", accountsController.authenticate);
 router.get("/dashboard", dashboardController.index);
 router.post("/dashboard/addstation", dashboardController.addStation);
 router.get("/dashboard/deletestation/:id", dashboardController.deleteStation);
+
 router.get("/station/getWeatherCodes", stationController.getWeatherCodes);
 router.get("/station/:id", stationController.index);
 router.post("/station/:id/addreport", stationController.addReport);
 router.get("/station/:stationid/deletereport/:reportid", stationController.deleteReport);
+
+router.get("/account", accountsController.getAccountInfo);
+router.get("/account/:userid/editInfo", accountsController.accountEditor);
+router.post("/account/:userid/updateaccount", accountsController.updateAccount);
