@@ -12,6 +12,8 @@ export const weatherCodeStore = {
   async getWeatherCodeInfo(weatherCode) {
     await db.read();
 
+    console.log("weather code " + weatherCode)
+
     const weatherType = await db.data.weather_codes.find(
       (code) => code.weather_code == weatherCode
     );
@@ -31,5 +33,18 @@ export const weatherCodeStore = {
     console.log(weatherType);
 
     return { icon_code, weatherDescription };
+  },
+
+  async getWeatherInfoForStation(stationSummary) {
+    // set default values if code is not in database
+    if (!stationSummary || !stationSummary.code) {
+      return {
+        icon_code: "01d",
+        weatherDescription: "No weather data available",
+      };
+    }
+
+    // If code is correct, return
+    return await this.getWeatherCodeInfo(stationSummary.code);
   },
 };

@@ -2,42 +2,6 @@
   "file": "./models/stations.json",
   "stations": [
     {
-      "title": "Dublin",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
-    },
-    {
-      "title": "Galway",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "_id": "87f5f833-e767-4c17-a0ef-cff7927424ac"
-    },
-    {
-      "title": "Cork",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "_id": "820440f5-a729-4631-8c48-213756eb10be"
-    },
-    {
-      "title": "Belfast",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "longitude": "428",
-      "latitude": "3473",
-      "_id": "509fb67e-b207-4b78-90b8-cfa6331ddd0f"
-    },
-    {
-      "title": "skjdfh",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "longitude": "fkwjhf",
-      "latitude": "fwkjhf",
-      "_id": "488ce224-0bf6-468d-a371-4c4b9fecfc2f"
-    },
-    {
-      "title": "Test",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "longitude": "43.434",
-      "latitude": "24.3445",
-      "_id": "99b39a59-7325-4989-806d-8f16e44b01ee"
-    },
-    {
       "title": "Test Town",
       "userid": "aa6aa524-5aab-45f5-a5fd-363b8b370282",
       "longitude": "45.64534",
@@ -50,6 +14,13 @@
       "longitude": "5",
       "latitude": "2",
       "_id": "6824d99d-b419-4971-b9e5-122ae74b9098"
+    },
+    {
+      "title": "Dublin",
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "longitude": "65.6534",
+      "latitude": "43.34342",
+      "_id": "1120c122-c58a-4d74-ba33-cdd95ff02874"
     }
   ]
 }

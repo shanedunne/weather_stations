@@ -172,6 +172,50 @@
       "timestamp": "2024-09-17T13:48:05.433Z",
       "_id": "8fe5e2a8-7c3b-4c2a-82fe-c1c413381f98",
       "station_id": "6824d99d-b419-4971-b9e5-122ae74b9098"
+    },
+    {
+      "code": "201",
+      "temp": "22",
+      "wind_speed": "32",
+      "wind_direction": "Southwest",
+      "pressure": "32",
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-17T16:27:09.093Z",
+      "_id": "eab87b92-6ed5-4985-bbb4-bdd490a8f94f",
+      "station_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
+    },
+    {
+      "code": "312",
+      "temp": "14",
+      "wind_speed": "23",
+      "wind_direction": "North",
+      "pressure": "34",
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-17T16:56:59.715Z",
+      "_id": "deba6570-eb7b-428c-8430-4e0bbf168733",
+      "station_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
+    },
+    {
+      "code": "312",
+      "temp": "14",
+      "wind_speed": "43",
+      "wind_direction": "North",
+      "pressure": "65",
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-17T16:58:06.649Z",
+      "_id": "d86ae559-5d9b-4a45-9248-990a62ead41b",
+      "station_id": "1120c122-c58a-4d74-ba33-cdd95ff02874"
+    },
+    {
+      "code": "612",
+      "temp": "23",
+      "wind_speed": "54",
+      "wind_direction": "Southeast",
+      "pressure": "65",
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-17T16:58:35.002Z",
+      "_id": "fadd5154-01fd-4199-97fc-d23393e1cd6d",
+      "station_id": "1120c122-c58a-4d74-ba33-cdd95ff02874"
     }
   ]
 }

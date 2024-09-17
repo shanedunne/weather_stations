@@ -10,16 +10,8 @@ export const stationController = {
         const station = await stationStore.getStationById(request.params.id);
         const reports = await reportStore.getAllReportsByStation(request.params.id);
         const stationSummary = await reportStore.getStationSummary(request.params.id);
+        const weatherInfo = await weatherCodeStore.getWeatherInfoForStation(stationSummary);
 
-        // default weather code and description included here to prevent crash when new station created or incorrect weather code provided
-        let weatherInfo = {
-            icon_code: "01d",
-            weatherDescription: "No weather data available",
-        };
-    
-        if (stationSummary && stationSummary.code) {
-            weatherInfo = await weatherCodeStore.getWeatherCodeInfo(stationSummary.code);
-        }
     
         const viewData = {
             title: "Station",
