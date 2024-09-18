@@ -9,6 +9,17 @@ export const dashboardController = {
         // const stationSummary = await reportStore.getStationSummary(request.params.id);
         const stations = await stationStore.getStationsByUserId(loggedInUser._id);
 
+        // sort stations alphabetically
+        stations.sort(function (a, b) {
+            if (a.title < b.title) {
+                return -1;
+            } 
+            if (a.title > b.title) {
+                return 1;
+            }
+            return 0;
+        })
+
         // declare an empty array to hold station data
         const stationData = [];
         for(let i = 0; i < stations.length; i++) {
