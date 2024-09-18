@@ -1,17 +1,27 @@
 import { stationStore } from "../models/station-store.js";
 import { accountsController } from "./accounts-controller.js";
 import { reportStore } from "../models/report-store.js";
+import { weatherCodeStore } from "../models/weather-code-store.js";
 
 export const dashboardController = {
     async index(request, response) {
         const loggedInUser = await accountsController.getLoggedInUser(request);
-        const stationSummary = await reportStore.getStationSummary(request.params.id);
+        // const stationSummary = await reportStore.getStationSummary(request.params.id);
         const stations = await stationStore.getStationsByUserId(loggedInUser._id);
+
+        // declare an empty array to hold station data
+        const stationData = [];
+        for(let i = 0; i < stations.length; i++) {
+            const station = stations[i];
+            const stationSummary = await reportStore.getStationSummary(station._id);
+            const weatherInfo = await weatherCodeStore.getWeatherInfoForStation(stationSummary);
+            stationData.push({...station, stationSummary, weatherInfo});
+
+        }
 
         const viewData = {
             title : "Station Dashboard",
-            stations: stations,
-            stationSummary: stationSummary,
+            stations: stationData,
         }
         console.log("station dashboard rendering");
         response.render("dashboard-view", viewData);
