@@ -2,6 +2,7 @@ import { stationStore } from "../models/station-store.js";
 import { reportStore } from "../models/report-store.js";
 import { weatherCodeStore } from "../models/weather-code-store.js";
 import { accountsController } from "./accounts-controller.js";
+import { reportGenerator } from "../utils/report-generator.js";
 
 
 
@@ -41,6 +42,30 @@ export const stationController = {
         };
         console.log("Adding new report");
         await reportStore.addReport(station._id, newReport);
+        response.redirect("/station/" + station._id);
+    },
+
+    // adds a report to the users station and redirects to the station
+    async generateReport(request, response) {
+        const station = await stationStore.getStationById(request.params.id);
+        const loggedInUser = await accountsController.getLoggedInUser(request);
+        console.log("station ID at controller" + station._id)
+
+        const reportData = await reportGenerator(station.title);
+        console.log(reportData);
+    
+        const generatedReport = {
+            code: reportData.code,
+            temp: reportData.temp,
+            wind_speed: reportData.wind_speed,
+            wind_direction: reportData.wind_direction,
+            pressure: reportData.pressure,
+            userid: loggedInUser._id,
+            timestamp: new Date().toISOString(),
+        };
+    
+        console.log("Generating new report");
+        await reportStore.addReport(station._id, generatedReport);
         response.redirect("/station/" + station._id);
     },
 

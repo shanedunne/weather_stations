@@ -31,8 +31,6 @@ export const weatherCodeStore = {
     const icon_code = weatherType.icon_code;
     const weatherDescription = weatherType.weather_description;
 
-    console.log(weatherType);
-
     return { icon_code, weatherDescription };
   },
 

@@ -315,6 +315,17 @@
       "timestamp": "2024-09-18T13:25:57.432Z",
       "_id": "91fe1a2a-6489-4ff4-bf37-b7c50ee72ef3",
       "station_id": "12a6216e-4d42-4b69-ad17-369d5b2ec40b"
+    },
+    {
+      "code": 802,
+      "temp": 24,
+      "wind_speed": 17,
+      "wind_direction": "Northeast",
+      "pressure": 1016,
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-18T20:03:32.715Z",
+      "_id": "d909f66f-fd14-47d8-82fd-ae0b6831ec65",
+      "station_id": "847a953c-97c4-4572-a3a1-a5195756faf3"
     }
   ]
 }

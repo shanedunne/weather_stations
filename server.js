@@ -4,6 +4,7 @@ import cookieParser from "cookie-parser";
 import fileUpload from "express-fileupload";
 import { engine } from "express-handlebars";
 import { router } from "./routes.js";
+import 'dotenv/config'
 
 const app = express();
 app.use(cookieParser());
