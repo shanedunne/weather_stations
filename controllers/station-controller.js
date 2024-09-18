@@ -6,6 +6,8 @@ import { accountsController } from "./accounts-controller.js";
 
 
 export const stationController = {
+
+    // renders the station view and displays station specific information
     async index(request, response) {
         const station = await stationStore.getStationById(request.params.id);
         const reports = await reportStore.getAllReportsByStation(request.params.id);
@@ -23,6 +25,7 @@ export const stationController = {
         response.render("station-view", viewData);
     },
 
+    // adds a report to the users station and redirects to the station
     async addReport(request, response) {
         const station = await stationStore.getStationById(request.params.id);
         const loggedInUser = await accountsController.getLoggedInUser(request);
@@ -41,6 +44,7 @@ export const stationController = {
         response.redirect("/station/" + station._id);
     },
 
+    // deletes the selected report and redirects to the station
     async deleteReport(request, response) {
         const stationId = request.params.stationid;
         const reportId = request.params.reportid;
@@ -49,6 +53,7 @@ export const stationController = {
         response.redirect("/station/" + stationId);
     },
 
+    // renders the weather codes view where users can see a full list of weather codes for input
     async getWeatherCodes(request, response) {
         const weather_codes = await weatherCodeStore.getAllWeatherCodes();         
         const viewData = {

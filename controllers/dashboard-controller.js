@@ -4,6 +4,8 @@ import { reportStore } from "../models/report-store.js";
 import { weatherCodeStore } from "../models/weather-code-store.js";
 
 export const dashboardController = {
+
+    // renders the user specific dashboard, displaying only the users stations with summaries
     async index(request, response) {
         const loggedInUser = await accountsController.getLoggedInUser(request);
         const stations = await stationStore.getStationsByUserId(loggedInUser._id);
@@ -39,6 +41,7 @@ export const dashboardController = {
         response.render("dashboard-view", viewData);
     },
 
+    // takes information user enters and creates a user specific station
     async addStation(request, response) {
         const loggedInUser = await accountsController.getLoggedInUser(request);
         const newStation = {
@@ -52,6 +55,8 @@ export const dashboardController = {
         response.redirect("/dashboard");
     },
 
+    // deletes the station
+    // deletes all reports associated with the station
     async deleteStation(request, response) {
         const stationId = request.params.id;
 
@@ -69,6 +74,7 @@ export const dashboardController = {
         response.redirect("/dashboard");
       },
 
+      // renders the station view
     async getStation(request, response) {
         const station = await stationStore.getStationById(request.params.id);
         const viewData = {

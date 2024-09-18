@@ -4,6 +4,8 @@ import { initStore } from "../utils/store-utils.js";
 const db = initStore("reports");
 
 export const reportStore = {
+
+  // gets all reports associated with a specific station 
   async getAllReportsByStation(stationId) {
     await db.read();
 
@@ -17,6 +19,7 @@ export const reportStore = {
     }
   },
 
+  // takes a new report and adds it to its associated station
   async addReport(stationId, report) {
     await db.read();
 
@@ -30,6 +33,7 @@ export const reportStore = {
     return report;
   },
 
+  // gets the latest report for a given station. the parameter is reports of a specific station
   async getLatestStationReport(reports) {
     if (reports.length === 0) return null;
 
@@ -39,12 +43,14 @@ export const reportStore = {
     return latestReport;
   },
 
+  // gets the minimim and maximum value of a given field from all reports at that station
   async getMinMaxValues(reports, field) {
     const max = Math.max(...reports.map((report) => report[field]));
     const min = Math.min(...reports.map((report) => report[field]));
     return { max, min };
   },
 
+  // produces the station summary for a particular station
   async getStationSummary(stationId){
     const stationReports = await this.getAllReportsByStation(stationId);
 
@@ -74,6 +80,7 @@ export const reportStore = {
 
   },
 
+  // deletes a report by its id
   async deleteReport(id) {
     await db.read();
     const index = db.data.reports.findIndex((report) => report._id === id);

@@ -4,11 +4,14 @@ import { initStore } from "../utils/store-utils.js";
 const db = initStore("weather-codes");
 
 export const weatherCodeStore = {
+
+  // gets all weather codes from the json file
   async getAllWeatherCodes() {
     await db.read();
     return db.data.weather_codes;
   },
 
+  // gets all information associated with a specific weather code
   async getWeatherCodeInfo(weatherCode) {
     await db.read();
 
@@ -33,7 +36,10 @@ export const weatherCodeStore = {
     return { icon_code, weatherDescription };
   },
 
+  // checks to see if there is a stationSummary and a stationSummary code provided, if not, returns defualts. 
+  // otherwise, calls getWeatherCodeInfo and returns correct values
   async getWeatherInfoForStation(stationSummary) {
+    
     // set default values if code is not in database
     if (!stationSummary || !stationSummary.code) {
       return {
