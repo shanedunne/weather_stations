@@ -6,7 +6,6 @@ import { weatherCodeStore } from "../models/weather-code-store.js";
 export const dashboardController = {
     async index(request, response) {
         const loggedInUser = await accountsController.getLoggedInUser(request);
-        // const stationSummary = await reportStore.getStationSummary(request.params.id);
         const stations = await stationStore.getStationsByUserId(loggedInUser._id);
 
         // sort stations alphabetically
@@ -22,6 +21,8 @@ export const dashboardController = {
 
         // declare an empty array to hold station data
         const stationData = [];
+
+        // get required information for each station and push to stationData array
         for(let i = 0; i < stations.length; i++) {
             const station = stations[i];
             const stationSummary = await reportStore.getStationSummary(station._id);
@@ -53,6 +54,16 @@ export const dashboardController = {
 
     async deleteStation(request, response) {
         const stationId = request.params.id;
+
+        // delete reports belonging to station first
+        const stationReports = await reportStore.getAllReportsByStation(stationId);
+        console.log(stationReports);
+    
+        for (let i = 0; i < stationReports.length; i++) {
+            await reportStore.deleteReport(stationReports[i]._id);
+            console.log("deleted report " + stationReports[i]._id + "from station " + stationId);
+        }
+
         console.log(`Deleting station ${stationId}`);
         await stationStore.deleteStationById(stationId);
         response.redirect("/dashboard");

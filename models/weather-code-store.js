@@ -12,8 +12,6 @@ export const weatherCodeStore = {
   async getWeatherCodeInfo(weatherCode) {
     await db.read();
 
-    console.log("weather code " + weatherCode)
-
     const weatherType = await db.data.weather_codes.find(
       (code) => code.weather_code == weatherCode
     );
