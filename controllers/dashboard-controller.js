@@ -10,6 +10,18 @@ export const dashboardController = {
         const loggedInUser = await accountsController.getLoggedInUser(request);
         const stations = await stationStore.getStationsByUserId(loggedInUser._id);
 
+        // declare locations array for passing to script in stations-map.hbs
+        const locations = [];
+
+        // loop through stations and gather data for map markers.
+        for (let i = 0; i < stations.length; i++) {
+            locations.push({
+                title: stations[i].title,
+                longitude: stations[i].longitude || null,
+                latitude: stations[i].latitude || null,
+            })
+        }
+        
         // sort stations alphabetically
         stations.sort(function (a, b) {
             if (a.title < b.title) {
@@ -36,9 +48,12 @@ export const dashboardController = {
         const viewData = {
             title : "Station Dashboard",
             stations: stationData,
+            locations: locations,
         }
         console.log("station dashboard rendering");
+        console.log(locations)
         response.render("dashboard-view", viewData);
+
     },
 
     // takes information user enters and creates a user specific station

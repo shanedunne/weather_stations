@@ -1,0 +1,36 @@
+<div class="section">
+    <div class="box">
+        <h2 class="title is-2">Station Map</h2>
+        <div id="map" style="height: 400px;">
+
+        </div>
+    </div>
+</div>
+<script>
+    var map = L.map('map', {
+        center: [53.491, -7.918],
+        zoom: 6
+    });
+    L.tileLayer('https://tile.openstreetmap.org/{z}/{x}/{y}.png', {
+    maxZoom: 19,
+    attribution: '&copy; <a href="http://www.openstreetmap.org/copyright">OpenStreetMap</a>'
+    }).addTo(map);
+
+    // uses express handlebars json helper to read js object
+    const locations = {{{json locations}}};
+
+
+    // Loop through locations and add markers and pop ups
+    locations.forEach(function (location) {
+
+        // Ensure both latitude and longitude exist and are valid numbers
+        if (location.latitude && location.longitude) {
+        let lat = parseFloat(location.latitude);
+        let lon = parseFloat(location.longitude);
+
+        // add marker and popup
+        L.marker([lat, lon]).addTo(map).bindPopup(`<b>${location.title}</b>`);
+        }
+    });
+
+</script>

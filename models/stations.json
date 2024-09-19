@@ -25,16 +25,9 @@
     {
       "title": "Galway",
       "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "longitude": "87.564",
-      "latitude": "56.643",
-      "_id": "dcc4d655-dc9d-404a-a337-1c2bdf07a9bf"
-    },
-    {
-      "title": "New York",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "longitude": "",
-      "latitude": "",
-      "_id": "847a953c-97c4-4572-a3a1-a5195756faf3"
+      "longitude": "-9.06",
+      "latitude": "53.27",
+      "_id": "1fd24e57-02fc-4d10-b07d-a9723eeab274"
     }
   ]
 }

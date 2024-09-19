@@ -196,28 +196,6 @@
       "station_id": "78ce081b-237e-42be-bf84-6ea921183fb5"
     },
     {
-      "code": "504",
-      "temp": "5",
-      "wind_speed": "43",
-      "wind_direction": "East",
-      "pressure": "32",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "timestamp": "2024-09-18T13:04:36.924Z",
-      "_id": "407aa44c-b568-4e20-9a10-6b9adc048bc4",
-      "station_id": "dcc4d655-dc9d-404a-a337-1c2bdf07a9bf"
-    },
-    {
-      "code": "503",
-      "temp": "14",
-      "wind_speed": "33",
-      "wind_direction": "Southeast",
-      "pressure": "23",
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "timestamp": "2024-09-18T13:04:56.943Z",
-      "_id": "34bb58a4-972d-406e-965e-9977c49d1f9c",
-      "station_id": "dcc4d655-dc9d-404a-a337-1c2bdf07a9bf"
-    },
-    {
       "code": "234",
       "temp": "234",
       "wind_speed": "345",
@@ -295,17 +273,6 @@
       "station_id": "12a6216e-4d42-4b69-ad17-369d5b2ec40b"
     },
     {
-      "code": 802,
-      "temp": 24,
-      "wind_speed": 17,
-      "wind_direction": "Northeast",
-      "pressure": 1016,
-      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
-      "timestamp": "2024-09-18T20:03:32.715Z",
-      "_id": "d909f66f-fd14-47d8-82fd-ae0b6831ec65",
-      "station_id": "847a953c-97c4-4572-a3a1-a5195756faf3"
-    },
-    {
       "code": 801,
       "temp": 20,
       "wind_speed": 9,
@@ -348,6 +315,39 @@
       "timestamp": "2024-09-19T09:23:28.317Z",
       "_id": "d3911c6f-e324-40ad-90ca-f49fa8525cc4",
       "station_id": "1120c122-c58a-4d74-ba33-cdd95ff02874"
+    },
+    {
+      "code": 800,
+      "temp": 14,
+      "wind_speed": 9,
+      "wind_direction": "Northwest",
+      "pressure": 1011,
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-19T09:24:35.553Z",
+      "_id": "f59b6441-0515-49e3-a756-229cfc91f732",
+      "station_id": "1120c122-c58a-4d74-ba33-cdd95ff02874"
+    },
+    {
+      "code": 701,
+      "temp": 14,
+      "wind_speed": 2,
+      "wind_direction": "Southeast",
+      "pressure": 1010,
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-19T11:45:14.176Z",
+      "_id": "44614ca1-8f19-4af8-a155-56449d5f622e",
+      "station_id": "1120c122-c58a-4d74-ba33-cdd95ff02874"
+    },
+    {
+      "code": 800,
+      "temp": 20,
+      "wind_speed": 16,
+      "wind_direction": "East",
+      "pressure": 1026,
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-19T14:39:24.883Z",
+      "_id": "f1ec3db8-7630-4180-9171-c2873e4ccb11",
+      "station_id": "1fd24e57-02fc-4d10-b07d-a9723eeab274"
     }
   ]
 }
