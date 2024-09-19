@@ -348,6 +348,12 @@
       "timestamp": "2024-09-19T14:39:24.883Z",
       "_id": "f1ec3db8-7630-4180-9171-c2873e4ccb11",
       "station_id": "1fd24e57-02fc-4d10-b07d-a9723eeab274"
+    },
+    {
+      "userid": "6dda7be9-10b8-4faa-918a-0066eb80103d",
+      "timestamp": "2024-09-19T16:07:43.919Z",
+      "_id": "94798d7f-1dfd-4553-820e-0b1a128abb86",
+      "station_id": "269040b2-a9a7-4406-b03f-29d3c37370b5"
     }
   ]
 }
