@@ -14,14 +14,34 @@ export const stationController = {
         const reports = await reportStore.getAllReportsByStation(request.params.id);
         const stationSummary = await reportStore.getStationSummary(request.params.id);
         const weatherInfo = await weatherCodeStore.getWeatherInfoForStation(stationSummary);
+        
+        // declare chartData object and nested arrays for chart
+        const chartData = {};
+        chartData.tempTrend = [];
+        chartData.time = [];
 
-    
+        // declare that the chart should declare 7 data points
+        let chartPoints = 7;
+
+        // ensures that if there is less than 7 data points, the chart renders the max it can < 7
+        if (reports.length < 7) {
+            chartPoints = reports.length;
+        } 
+
+        // loop through the reports to extract the data
+        for (let i = 0; i < chartPoints; i++) {
+            chartData.tempTrend.push(Math.round(reports[i].temp));
+            chartData.time.push(reports[i].timestamp);
+        }
+        
+
         const viewData = {
             title: "Station",
             station: station,
             reports: reports,
             stationSummary: stationSummary,
             weatherInfo: weatherInfo,
+            chartData: chartData,
         };
         response.render("station-view", viewData);
     },
@@ -33,10 +53,10 @@ export const stationController = {
         console.log("station ID at controller" + station._id)
         const newReport = {
             code: request.body.code,
-            temp: request.body.temp,
-            wind_speed: request.body.wind_speed,
+            temp: parseInt(request.body.temp),
+            wind_speed: parseInt(request.body.wind_speed),
             wind_direction: request.body.wind_direction,
-            pressure: request.body.pressure,
+            pressure: parseInt(request.body.pressure),
             userid: loggedInUser._id,
             timestamp: new Date().toISOString(),
         };
@@ -86,5 +106,6 @@ export const stationController = {
         };
         response.render("weather-codes-view", viewData);
     },
+
     
 };

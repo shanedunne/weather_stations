@@ -5,7 +5,37 @@
         {{station.title}}
         {{> weather-summary}}
     </div>
+    <div class="box" id="chart">
+
+    </div>
     {{> list-reports}}
     {{> add-report}}
     {{> generate-report}}
 </section>
+
+<script>
+  const data = {
+    labels: [
+      {{#each chartData.time}}
+        "{{this}}",
+      {{/each}}
+    ],
+    datasets: [
+      {
+        name: "Temperature", type: "line",
+        values: [
+          {{#each chartData.tempTrend}}
+            {{this}},
+          {{/each}}
+        ]
+      }
+    ]
+  }
+
+  const chart = new frappe.Chart("#chart", {
+    title: "Temperature Trend",
+    data: data,
+    type: 'line',
+    height: 250,
+  })
+</script>
