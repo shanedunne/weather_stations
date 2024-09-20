@@ -4,7 +4,7 @@ import { metrePerSecToKPH } from "./wind-speed-converter.js";
 import { whichWindDirecton } from "./wind-degrees.js";
 
 
-
+// calls the OpenWeatherMap API to retreive a report based on the station name passed to it
 export async function reportGenerator(stationName) {
     
     const api = `https://api.openweathermap.org/data/2.5/weather?q=${stationName}&appid=${process.env.OPEN_WEATHER_API_KEY}&units=metric`;

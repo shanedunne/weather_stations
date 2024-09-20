@@ -1,3 +1,5 @@
+
+// takes the degree value received from the OpenWeatherMap API and converts to a direction to conform with the dropdown when manually entering a report
 export function whichWindDirecton(degree) {
     if (degree < 22.25 && degree > 337.5) {
         return "North"
